@@ -4,6 +4,22 @@ of my projects ever becoming a conduit for collaboration (since I prefer working
 alone), I'll at least have something in black-and-white to direct anybody to who
 feels compelled to send a PR on one of my projects.
 
+**~~Table~~**
+**TL;DR of contents:**
+
+1.  [Use tabs for indentation](#1-use-tabs-for-indentation)
+2.  [Don't use tabs for alignment](#2-dont-use-tabs-for-alignment)
+3.  [K&R bracing style](#3-bracing-style)
+4.  [Casing style](#4-casing-style)
+5.  [Use semicolons](#5-semicolons)
+6.  [Comma-last](#6-comma-last)
+7.  [Writing commit messages](#7-writing-commit-messages)
+8.  [No emoji](#8-no-emoji)
+9.  [No commit prefixes](#9-no-commit-prefixes)
+10. [Line length](#10-line-length)
+11. [Use standard English](#11-use-traditional-english-spelling-british-english)
+12. [Conclusion](#conclusion)
+
 Let's get this shed painted.
 
 
