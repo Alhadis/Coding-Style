@@ -7,7 +7,7 @@ feels compelled to send a PR on one of my projects.
 Let's get this shed painted.
 
 
-1. USE TABS FOR INDENTATION
+1. Use tabs for indentation
 --------------------------------------------------------------------------------
 Use hard tabs `(U+0009)` to indent.
 
@@ -20,7 +20,7 @@ Everybody has their own preference on what they're most comfortable reading. Let
 them enjoy it, use tabs, and *use them responsibly*. Which brings me to point 2:
 
 
-2. DON'T USE TABS FOR ALIGNMENT
+2. Don't use tabs for alignment
 --------------------------------------------------------------------------------
 Never assume a tab will be of any particular length, even if your project has an
 `.editorconfig` file. Imagine a tab is an invisible, elastic region of space the
@@ -57,7 +57,7 @@ If you're the comma-first sort of person (which I am *NOT*), you could do this:
 I think you get it.
 
 
-3. BRACING STYLE
+3. Bracing style
 --------------------------------------------------------------------------------
 I prefer the K&R style, with curly-brackets only appearing on their own lines if
 the construct they're a part of can't be nested. For instance, in PHP, you can't
@@ -88,7 +88,7 @@ to existing code. If your PR's diffs crackle with noisy, irrelevant and cosmetic
 changes, it's getting kicked.
 
 
-4. SEMICOLONS
+4. Semicolons
 --------------------------------------------------------------------------------
 Use them. They're not optional in every programming language. Trying to remember
 which languages have ASI and which don't is harder than simply hitting that damn
@@ -100,7 +100,7 @@ of reading your e-mails.
 > what's the url
 
 
-5. COMMA-LAST
+5. Comma-last
 --------------------------------------------------------------------------------
 Nobody writes like this  
 , so neither should you  
@@ -116,7 +116,7 @@ But hey
 
 
 
-6. WRITING COMMIT MESSAGES
+6. Writing commit messages
 --------------------------------------------------------------------------------
 [This entire damn article](http://chris.beams.io/posts/git-commit/). Every point
 is like holy Git law to me. BE FOREWARNED: Not adhering to these points WILL get
@@ -127,7 +127,7 @@ hash just to amend the tone of a commit message).
 
 
 
-7. NO EMOJI
+7. No emoji
 --------------------------------------------------------------------------------
 GitHub like using cutesy graphics in their commit messages, and NPM do too, it'd
 seem. Submit a PR with an emoji *anywhere* and it'll get rejected - even if your
@@ -144,7 +144,7 @@ Although I guess it could always be worse:
 
 
 
-8. NO COMMIT PREFIXES
+8. No commit prefixes
 --------------------------------------------------------------------------------
 This ties in with the points raised in *"How to write a commit message"*, above.
 Use the imperative tone, leave out the leading `Prefix: Fix something`. Assuming
@@ -153,7 +153,7 @@ you're clear, direct and informative with your subject lines, grepping through a
 
 
 
-9. LINE LENGTH
+9. Line length
 --------------------------------------------------------------------------------
 
 * Commit subjects:         <= 69 (REQUIRED)
@@ -186,7 +186,7 @@ try your time machine.
 
 
 
-10. USE TRADITIONAL ENGLISH SPELLING ("BRITISH" ENGLISH)
+10. Use traditional English spelling ("British" English)
 --------------------------------------------------------------------------------
 Unsurprisingly, many open source projects suffer from an unpredictable mix of US
 English and traditional English (what the US call "British" English). I'm from a
@@ -202,7 +202,7 @@ to feel that every day of your life while doing something you enjoy.
 
 
 
-CONCLUSION
+Conclusion
 --------------------------------------------------------------------------------
 I'm used to working alone - I write code for code's sake, not because I'd expect
 my projects to become group efforts. That doesn't mean I'm an arsehole: in fact,
