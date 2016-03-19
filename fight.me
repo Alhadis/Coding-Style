@@ -116,7 +116,29 @@ I generally prefer no spaces between the closing bracket and the opening bracket
 but I won't bite your head off for inserting a space for readability.
 Unless of course, you're going around making wanton adjustments to existing code.
 If your PR's diffs crackle with noisy, irrelevant and cosmetic changes, it's getting kicked.
-.SH "4. SEMICOLONS"
+.SH "4. CASING STYLE"
+Depends on language.
+Stick to the style used by a language's standard library:
+.PP
+.IP "*" 4
+camelCase:  JavaScript
+.IP "*" 4
+kebab\-case: Anywhere where dashes are legal \- HTML, CSS and filenames
+.IP "*" 4
+snake_case: Anywhere where dashes *aren't* legal (PHP, Perl, most languages)
+.PP
+For kebab-case and snake_case, capitalisation follows the usual conventions of a programming language:
+.PP
+.IP "*" 4
+Classes: PascalCase
+.IP "*" 4
+Constants: SCREAMING_SNAKE_CASE
+.IP "*" 4
+Anything else: lowerCase / lower-case / lower_case
+.PP
+\fINOTE\fR: My capitalisation of variable names is sometimes inconsistent when writing shell\-scripts and Makefiles.
+Generally I'll start out writing them in UPPERCASE, then switch to lowercase when there're too many variables making everything look too shouty.
+.SH "5. SEMICOLONS"
 Use them.
 They're not optional in every programming language.
 .PP
@@ -129,7 +151,7 @@ And if that's too much effort for you, well, I shudder at the thought of reading
 \&    > did you remember the question mark
 \&    > what's the url
 .Ve
-.SH "5. COMMA\-LAST"
+.SH "6. COMMA\-LAST"
 .nf 
 Nobody writes like this  
 , so neither should you  
@@ -143,7 +165,7 @@ But hey
 , less noise in your diffs  
 , right? RIGHT?
 .fi
-.SH "6. WRITING COMMIT MESSAGES"
+.SH "7. WRITING COMMIT MESSAGES"
 This entire damn article:\fI http://chris.beams.io/posts/git-commit/ \fR
 .PP
 Every point is like holy Git law to me.
@@ -154,17 +176,17 @@ The reason is simple: a commit message is permanent.
 Yes, it's possible to modify through rebasing, \
 but that defeats the purpose of maintaining an honest and transparent modification history
 (and I'd rather not clobber a SHA hash just to amend the tone of a commit message).
-.SH "7. NO EMOJI"
+.SH "8. NO EMOJI"
 GitHub like using cutesy graphics in their commit messages, and NPM do too, it'd seem.
 .PP
 Submit a PR with an emoji \fBanywhere\fR and it'll get rejected \- even if your code is nothing short of brilliant.
 .PP
 Git isn't Twitter. What you're seeing on GitHub is only a decorated rendition of each commit's actual content.
-.SH "8. NO COMMIT PREFIXES"
+.SH "9. NO COMMIT PREFIXES"
 This ties in with the points raised in \fB"How to write a commit message"\fR, above.
 Use the imperative tone, leave out the leading `Prefix: Fix something`.
 Assuming you're clear, direct and informative with your subject lines, grepping through a `--oneline` log shouldn't be a hassle.
-.SH "9. LINE LENGTH"
+.SH "10. LINE LENGTH"
 .IP "*" 4
 Commit subjects:         <= 69 (REQUIRED)
 .IP "*" 4
@@ -190,7 +212,7 @@ if somebody needs stuff kept within the 80-column boundary, you can probably ass
 Even if you're wrong, most users will have tab-sizes set to a smaller size like 4 or 2.
 Multics used 10-character tab-stops, but if that's an issue, please let me know.
 I want to be the first to try your time machine.
-.SH 10. USE TRADITIONAL ENGLISH SPELLING ("BRITISH" ENGLISH)
+.SH 11. USE TRADITIONAL ENGLISH SPELLING ("BRITISH" ENGLISH)
 Unsurprisingly, many open source projects suffer from an unpredictable mix of US English and traditional English (what the US call "British" English).
 I'm from a Commonwealth nation, and I was taught to use Standard English.
 Therefore, I name all my identifiers using the Queen's English (e.g., `class RGBAColour`).

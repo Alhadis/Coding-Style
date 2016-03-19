@@ -88,7 +88,29 @@ to existing code. If your PR's diffs crackle with noisy, irrelevant and cosmetic
 changes, it's getting kicked.
 
 
-4. Semicolons
+4. Casing style
+--------------------------------------------------------------------------------
+Depends on language. Stick to the style used by a language's standard library:
+
+* camelCase:  JavaScript
+* kebab-case: Anywhere where dashes are legal - HTML, CSS and filenames
+* snake_case: Anywhere where dashes *aren't* legal (PHP, Perl, most languages)
+
+For kebab-case and snake_case, capitalisation follows the usual conventions of a
+programming language:
+
+* Classes: PascalCase
+* Constants: SCREAMING_SNAKE_CASE
+* Anything else: lowerCase / lower-case / lower_case
+
+NOTE: My capitalisation of variable names is sometimes inconsistent when writing
+shell-scripts and Makefiles. Generally I'll start out writing them in UPPERCASE,
+then switch to lowercase when there're too many variables making everything look
+too shouty.
+
+
+
+5. Semicolons
 --------------------------------------------------------------------------------
 Use them. They're not optional in every programming language. Trying to remember
 which languages have ASI and which don't is harder than simply hitting that damn
@@ -100,7 +122,7 @@ of reading your e-mails.
 > what's the url
 
 
-5. Comma-last
+6. Comma-last
 --------------------------------------------------------------------------------
 Nobody writes like this  
 , so neither should you  
@@ -116,7 +138,7 @@ But hey
 
 
 
-6. Writing commit messages
+7. Writing commit messages
 --------------------------------------------------------------------------------
 [This entire damn article](http://chris.beams.io/posts/git-commit/). Every point
 is like holy Git law to me. BE FOREWARNED: Not adhering to these points WILL get
@@ -127,7 +149,7 @@ hash just to amend the tone of a commit message).
 
 
 
-7. No emoji
+8. No emoji
 --------------------------------------------------------------------------------
 GitHub like using cutesy graphics in their commit messages, and NPM do too, it'd
 seem. Submit a PR with an emoji *anywhere* and it'll get rejected - even if your
@@ -144,7 +166,7 @@ Although I guess it could always be worse:
 
 
 
-8. No commit prefixes
+9. No commit prefixes
 --------------------------------------------------------------------------------
 This ties in with the points raised in *"How to write a commit message"*, above.
 Use the imperative tone, leave out the leading `Prefix: Fix something`. Assuming
@@ -153,7 +175,7 @@ you're clear, direct and informative with your subject lines, grepping through a
 
 
 
-9. Line length
+10. Line length
 --------------------------------------------------------------------------------
 
 * Commit subjects:         <= 69 (REQUIRED)
@@ -186,7 +208,7 @@ try your time machine.
 
 
 
-10. Use traditional English spelling ("British" English)
+11. Use traditional English spelling ("British" English)
 --------------------------------------------------------------------------------
 Unsurprisingly, many open source projects suffer from an unpredictable mix of US
 English and traditional English (what the US call "British" English). I'm from a
