@@ -108,12 +108,11 @@ changes, it's getting kicked.
 --------------------------------------------------------------------------------
 Depends on language. Stick to the style used by a language's standard library:
 
-* camelCase:  JavaScript
+* camelCase:  JavaScript, Haskell
 * kebab-case: Anywhere where dashes are legal - HTML, CSS and filenames
 * snake_case: Anywhere where dashes *aren't* legal (PHP, Perl, most languages)
 
-For kebab-case and snake_case, capitalisation follows the usual conventions of a
-programming language:
+Capitalisation follows the usual conventions of most programming languages:
 
 * Classes: PascalCase
 * Constants: SCREAMING_SNAKE_CASE
