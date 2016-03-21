@@ -228,11 +228,11 @@ try your time machine.
 --------------------------------------------------------------------------------
 Unsurprisingly, many open source projects suffer from an unpredictable mix of US
 English and traditional English (what the US call "British" English). I'm from a
-Commonwealth nation, and I was taught to use Standard English. Therefore, I name
-all my identifiers using the Queen's English (e.g., `class RGBAColour`). I don't
-care if the language's own standard library uses US English. My projects use the
-spelling I grow up on, and because I'm a pedantic prick, I'll enforce consistent
-language if I so choose to. You mightn't like it. Tough shit.
+Commonwealth nation, and I was taught to use Standard English. Therefore, that's
+what I use when naming my identifiers (e.g., `class RGBColour`). I don't care if
+the language's standard library uses US English - my projects use the spelling I
+grew up with. And because I'm a pedantic prick, I'll enforce consistent language
+if I choose to. You mightn't like it. Tough shit.
 
 If writing "colour" bothers you, spare a thought for those of us forced to write
 "color" because a language was authored that way. Then imagine what it'd be like
