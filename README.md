@@ -12,13 +12,14 @@ feels compelled to send a PR on one of my projects.
 3.  [K&R bracing style](#3-bracing-style)
 4.  [Casing style](#4-casing-style)
 5.  [Use semicolons](#5-semicolons)
-6.  [Comma-last](#6-comma-last)
-7.  [Writing commit messages](#7-writing-commit-messages)
-8.  [No emoji](#8-no-emoji)
-9.  [No commit prefixes](#9-no-commit-prefixes)
-10. [Line length](#10-line-length)
-11. [Use standard English](#11-use-traditional-english-spelling-british-english)
-12. [Conclusion](#conclusion)
+6.  [Double-quotes](#6-double-quotes)
+7.  [Comma-last](#7-comma-last)
+8.  [Writing commit messages](#8-writing-commit-messages)
+9.  [No emoji](#9-no-emoji)
+10. [No commit prefixes](#10-no-commit-prefixes)
+11. [Line length](#11-line-length)
+12. [Use standard English](#12-use-traditional-english-spelling-british-english)
+13. [Conclusion](#conclusion)
 
 Let's get this shed painted.
 
@@ -137,7 +138,38 @@ of reading your e-mails.
 > what's the url
 
 
-6. Comma-last
+6. Double-quotes
+--------------------------------------------------------------------------------
+Use double-quotes, unless it's a language sensitive to interpolation (like shell
+scripts, Perl, or PHP). An exception is a string containing double-quotes of its
+own: if using single-quotes helps eliminate escape characters, use them instead:
+
+    '"Use This"'
+    "\"Not this\""
+
+Because there's a difference between enforcing consistency and using your brain.
+It looks like this:
+ 
+    "- \"" + name + "\": \"" + value + "\""
+
+Instead of this:
+
+    '- "' + name + '": ' + value + '"'
+
+That being said, don't quote keys in object literals if they don't need it:
+
+    var obj = {
+        "This needs it": 1,
+        thisDoesNot:     1
+    };
+
+**Reason behind preference:**  
+Double-quotes are easier to distinguish at a glance than apostrophes. Sure, they
+involve holding an extra key. Who cares? Get a better keyboard if pressing shift
+keys is too cumbersome for you.
+
+
+7. Comma-last
 --------------------------------------------------------------------------------
 Nobody writes like this  
 , so neither should you  
@@ -153,7 +185,7 @@ But hey
 
 
 
-7. Writing commit messages
+8. Writing commit messages
 --------------------------------------------------------------------------------
 [This entire damn article](http://chris.beams.io/posts/git-commit/). Every point
 is like holy Git law to me. BE FOREWARNED: Not adhering to these points WILL get
@@ -164,7 +196,7 @@ hash just to amend the tone of a commit message).
 
 
 
-8. No emoji
+9. No emoji
 --------------------------------------------------------------------------------
 GitHub like using cutesy graphics in their commit messages, and NPM do too, it'd
 seem. Submit a PR with an emoji *anywhere* and it'll get rejected - even if your
@@ -181,7 +213,7 @@ Although I guess it could always be worse:
 
 
 
-9. No commit prefixes
+10. No commit prefixes
 --------------------------------------------------------------------------------
 This ties in with the points raised in *"How to write a commit message"*, above.
 Use the imperative tone, leave out the leading `Prefix: Fix something`. Assuming
@@ -190,7 +222,7 @@ you're clear, direct and informative with your subject lines, grepping through a
 
 
 
-10. Line length
+11. Line length
 --------------------------------------------------------------------------------
 
 * Commit subjects:         <= 69 (REQUIRED)
@@ -223,7 +255,7 @@ try your time machine.
 
 
 
-11. Use traditional English spelling ("British" English)
+12. Use traditional English spelling ("British" English)
 --------------------------------------------------------------------------------
 Unsurprisingly, many open source projects suffer from an unpredictable mix of US
 English and traditional English (what the US call "British" English). I'm from a
