@@ -155,11 +155,22 @@ Generally I'll start out writing them in UPPERCASE, then switch to lowercase whe
 .
 .SH "5. SEMICOLONS"
 Use them.
-They're not optional in every programming language.
+They make unfamiliar code easier to skim through by showing where each statement terminates,
+distinguishing those split across multiple lines:
 .PP
-Trying to remember which languages have ASI and which don't is harder than simply hitting that damn extra key.
+.Vb 7
+\&    let list = items
+\&        .filter(a => a !== unwanted)
+\&        .sort(a => a < b)
+\&        .join(" ")
+\&        .replace(/[A-Z]zip/g, "")
+\&        .etc();
+.Ve
 .PP
-And if that's too much effort for you, well, I shudder at the thought of reading your e-mails.
+They're also not optional in every programming language.
+Trying to remember what languages have ASI and which don't is harder than simply hitting that damn extra key.
+.PP
+And if that's too much effort for you, well, I imagine your emails probably look like this:
 .PP
 .Vb 3
 \&    > hey sup. i pushed a few comits last nite.

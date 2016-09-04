@@ -130,10 +130,20 @@ too shouty.
 
 5. Semicolons
 --------------------------------------------------------------------------------
-Use them. They're not optional in every programming language. Trying to remember
-which languages have ASI and which don't is harder than simply hitting that damn
-extra key. And if that's too much effort for you, well, I shudder at the thought
-of reading your e-mails.
+Use them. They make unfamiliar code easier to skim through by showing where each
+statement terminates, distinguishing those split across multiple lines:
+
+    let list = items
+        .filter(a => a !== unwanted)
+        .sort(a => a < b)
+        .join(" ")
+        .replace(/[A-Z]zip/g, "")
+        .etc();
+
+They're also not optional in every programming language. Trying to remember what
+languages have ASI and which don't is harder than simply hitting that damn extra
+key. And if that's too much effort for you, well, I imagine your emails probably
+look like this:
 
 > hey sup. i pushed a few comits last nite.  
 > did you remember the question mark  
