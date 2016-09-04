@@ -33,6 +33,8 @@ Really, I'm not joking. I wish I were, as it'd imply I DON'T get eye strain when
 I try squinting through cramped columns of 2-space-indented JavaScript that kids
 these days seem to think is trendy (and some adults for some reason).
 
+![Proud to detest the so-called JavaScript "Standard" Style](img/figure-1.png)
+
 Everybody has their own preference on what they're most comfortable reading. Let
 them enjoy it, use tabs, and *use them responsibly*. Which brings me to point 2:
 
@@ -205,11 +207,11 @@ code is nothing short of brilliant.
 Git isn't Twitter. What you're seeing on GitHub is only a decorated rendition of
 each commit's actual content:
 
-![Figure 1](./img/figure-1.png)
+![Figure 1](./img/figure-2.png)
 
 Although I guess it could always be worse:
 
-![Figure 2](./img/figure-2.png)
+![Figure 2](./img/figure-3.png)
 
 
 
