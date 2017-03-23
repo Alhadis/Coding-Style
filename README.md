@@ -24,7 +24,7 @@ feels compelled to send a PR on one of my projects.
 Let's get this shed painted.
 
 
-1. Use tabs for indentation
+1․ Use tabs for indentation
 --------------------------------------------------------------------------------
 Use hard tabs `(U+0009)` to indent.
 
@@ -39,7 +39,7 @@ Everybody has their own preference on what they're most comfortable reading. Let
 them enjoy it, use tabs, and *use them responsibly*. Which brings me to point 2:
 
 
-2. Don't use tabs for alignment
+2․ Don't use tabs for alignment
 --------------------------------------------------------------------------------
 Never assume a tab will be of any particular length, even if your project has an
 `.editorconfig` file. Imagine a tab is an invisible, elastic region of space the
@@ -76,7 +76,7 @@ If you're the comma-first sort of person (which I am *NOT*), you could do this:
 I think you get it.
 
 
-3. Bracing style
+3․ Bracing style
 --------------------------------------------------------------------------------
 I prefer the K&R style, with curly-brackets only appearing on their own lines if
 the construct they're a part of can't be nested. For instance, in PHP, you can't
@@ -107,7 +107,7 @@ to existing code. If your PR's diffs crackle with noisy, irrelevant and cosmetic
 changes, it's getting kicked.
 
 
-4. Casing style
+4․ Casing style
 --------------------------------------------------------------------------------
 Depends on language. Stick to the style used by a language's standard library:
 
@@ -128,7 +128,7 @@ too shouty.
 
 
 
-5. Semicolons
+5․ Semicolons
 --------------------------------------------------------------------------------
 Use them. They make unfamiliar code easier to skim through by showing where each
 statement terminates, distinguishing those split across multiple lines:
@@ -150,7 +150,7 @@ look like this:
 > what's the url
 
 
-6. Double-quotes
+6․ Double-quotes
 --------------------------------------------------------------------------------
 Use double-quotes, unless it's a language sensitive to interpolation (like shell
 scripts, Perl, or PHP). An exception is a string containing double-quotes of its
@@ -181,7 +181,7 @@ involve holding an extra key. Who cares? Get a better keyboard if pressing shift
 keys is too cumbersome for you.
 
 
-7. Comma-last
+7․ Comma-last
 --------------------------------------------------------------------------------
 Nobody writes like this  
 , so neither should you  
@@ -197,7 +197,7 @@ But hey
 
 
 
-8. Writing commit messages
+8․ Writing commit messages
 --------------------------------------------------------------------------------
 [This entire damn article](http://chris.beams.io/posts/git-commit/). Every point
 is like holy Git law to me. BE FOREWARNED: Not adhering to these points WILL get
@@ -208,7 +208,7 @@ hash just to amend the tone of a commit message).
 
 
 
-9. No emoji
+9․ No emoji
 --------------------------------------------------------------------------------
 GitHub like using cutesy graphics in their commit messages, and NPM do too, it'd
 seem. Submit a PR with an emoji *anywhere* and it'll get rejected - even if your
@@ -225,7 +225,7 @@ Although I guess it could always be worse:
 
 
 
-10. No commit prefixes
+10․ No commit prefixes
 --------------------------------------------------------------------------------
 This ties in with the points raised in *"How to write a commit message"*, above.
 Use the imperative tone, leave out the leading `Prefix: Fix something`. Assuming
@@ -234,7 +234,7 @@ you're clear, direct and informative with your subject lines, grepping through a
 
 
 
-11. Line length
+11․ Line length
 --------------------------------------------------------------------------------
 
 * Commit subjects:         <= 69 (REQUIRED)
@@ -267,7 +267,7 @@ try your time machine.
 
 
 
-12. Use traditional English spelling ("British" English)
+12․ Use traditional English spelling ("British" English)
 --------------------------------------------------------------------------------
 Unsurprisingly, many open source projects suffer from an unpredictable mix of US
 English and traditional English (what the US call "British" English). I'm from a
