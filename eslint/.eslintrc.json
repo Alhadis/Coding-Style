@@ -31,7 +31,7 @@
 			"error",
 			"always",
 			{
-				"ignorePattern": "camelCased|camelCase",
+				"ignorePattern": "camelCased|camelCase|gropdf|xterm",
 				"ignoreInlineComments": true,
 				"ignoreConsecutiveComments": true
 			}
