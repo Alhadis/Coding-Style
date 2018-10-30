@@ -175,7 +175,11 @@
 		],
 		"space-before-function-paren": [
 			"error",
-			"never"
+			{
+				"named": "never",
+				"anonymous": "never",
+				"asyncArrow": "always"
+			}
 		],
 		"space-in-parens": [
 			"error",
