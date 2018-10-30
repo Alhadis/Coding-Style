@@ -134,7 +134,8 @@
 		"no-with": "error",
 		"operator-linebreak": [
 			"error",
-			"before"
+			"before",
+			{"overrides": {"=": "after"}}
 		],
 		"prefer-arrow-callback": "error",
 		"prefer-const": [
