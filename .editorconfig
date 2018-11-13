@@ -4,13 +4,35 @@ root = true
 charset = utf-8
 end_of_line = lf
 insert_final_newline = true
-trim_trailing_whitespace = true
-indent_style = tab
-indent_size = 4
-
-[*.{md,php}]
 trim_trailing_whitespace = false
 
-[*.{yml,reek,rviz,yaml}]
+# Note these two lines simply tell GitHub to stop using
+# 8-column tab-widths when it's so damn easy for them to
+# add a repository setting which controls this.
+
+	indent_size = 4
+	indent_style = tab
+
+# If you work on my projects, feel free to set your tabs
+# to whatever width you're actuakkky most comfortable with:
+# just don't save them to spaces, because that's the part when
+# you become another mindles tab-hater who can't explain why.
+
+[*.{yml,yaml}]
 indent_style = space
 indent_size = 4
+
+
+# Two lone exceptions to the "Tabs-only/tabs-always" rules:
+
+# 1. You're writing in Lisp or any one of its major dialects (including Scheme, but not WebAssembly)
+[*.{el,elc,eld,spacemacs,_emacs,emacs,emacs.desktop,abbrev_defs,Project.ede,gnus,viper}]
+trim_trailing_whitespace = true
+indent_style = space
+indent_size = 2
+
+
+#    2. You're formatting a code-block for your commit message, which I'm damn hoping
+#       toy'll add something of insightful enough that it couldn't be adequately
+#       explained by prose alone.
+#
