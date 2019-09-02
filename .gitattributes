@@ -1,0 +1,2 @@
+# Include markdown in repository's language-stats
+*.md linguist-detectable=true
