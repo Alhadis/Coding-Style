@@ -2,8 +2,6 @@ root = true
 
 [*]
 indent_style = tab
-indent_size = 4
-tab_width = 4
 charset = utf-8
 end_of_line = lf
 insert_final_newline = true
@@ -14,7 +12,8 @@ spaces_around_operators = false
 spaces_around_brackets = none
 indent_brace_style = K&R
 
-[.git/COMMIT_EDITMSG]
+[{COMMIT_EDITMSG,MERGE_MSG}]
+trim_trailing_whitespace = true
 max_line_length = 72
 indent_style = space
 indent_size = 4
@@ -27,6 +26,11 @@ indent_size = 2
 [*.{bat,cmd}]
 end_of_line = crlf
 
-[*.{yml,yaml}]
+[*.{clang-format,yml,yaml}]
 indent_style = space
 indent_size = 4
+
+[*.srt]
+charset = utf-8-bom
+end_of_line = crlf
+insert_final_newline = unset
