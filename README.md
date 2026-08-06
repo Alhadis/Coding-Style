@@ -33,7 +33,16 @@ Really, I'm not joking. I wish I were, as it'd imply I DON'T get eye strain when
 I try squinting through cramped columns of 2-space-indented JavaScript that kids
 these days seem to think is trendy (and some adults for some reason).
 
-![Proud to detest the so-called JavaScript "Standard" Style](img/figure-1.png)
+<picture>
+<source
+	media="(prefers-color-scheme: dark)"
+	srcset="img/figure-1.svg#dark"
+/>
+<img
+	alt="Proud to detest the so-called JavaScript “Standard” Style"
+	src="img/figure-1.svg"
+/>
+</picture>
 
 Everybody has their own preference on what they're most comfortable reading. Let
 them enjoy it, use tabs, and *use them responsibly*. Which brings me to point 2:
