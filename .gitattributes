@@ -1,2 +1,3 @@
-# Include markdown in repository's language-stats
+# Include configs and markdown in repository's language-stats
+*.editorconfig linguist-detectable=true
 *.md linguist-detectable=true
